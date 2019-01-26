@@ -10,6 +10,16 @@ import { RegisterComponent } from 'src/app/components/users/register/register.co
 import { ProfileComponent } from 'src/app/components/users/profile/profile.component';
 //import { Page404Component } from './components/page404/page404.component';
 import { AuthGuard } from './guards/auth-guard';
+import { AbmlocalesComponent } from 'src/app/components/abmlocales/abmlocales.component';
+import { ProductosComponent } from 'src/app/components/productos/productos.component';
+import { PedidosComponent } from 'src/app/components/pedidos/pedidos.component';
+import { ReservasComponent } from 'src/app/components/reservas/reservas.component';
+import { UsuariosComponent } from 'src/app/components/usuarios/usuarios.component';
+import { EstadisticasComponent } from 'src/app/components/estadisticas/estadisticas.component';
+
+
+
+
 
 
 const routes: Routes = [
@@ -17,6 +27,14 @@ const routes: Routes = [
   { path: 'offers', component: OffersComponent, canActivate: [AuthGuard] },
   //{ path: 'book/:id', component: DetailsBookComponent },
   //{ path: 'admin/list-books', component: ListBooksComponent, canActivate: [AuthGuard] },
+  { path: 'user/abmlocales', component: AbmlocalesComponent },
+  { path: 'user/productos', component: ProductosComponent },
+  { path: 'user/pedidos', component: PedidosComponent },
+  { path: 'user/reservas', component: ReservasComponent },
+  { path: 'user/usuarios', component: UsuariosComponent },
+  { path: 'admin/estadisticas', component: EstadisticasComponent },
+
+
   { path: 'user/login', component: LoginComponent },
   { path: 'user/register', component: RegisterComponent },
   { path: 'user/profile', component: ProfileComponent, canActivate: [AuthGuard] }//,

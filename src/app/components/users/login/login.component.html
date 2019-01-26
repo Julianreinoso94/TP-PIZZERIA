@@ -16,6 +16,17 @@
                 <div class="form-group">
                   <input [(ngModel)]="password" type="password" id="password" name="password" class="form-control" placeholder="Password" required>
                 </div>
+                <div class="dropdown">
+                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Tipo de Usuario
+                  <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                  <li><a (click)="administrador()" value="Administrador">Administrador</a></li>
+                  <li><a (click)="encargado()" value="Encargado">Encargado</a></li>
+                  <li><a (click)="empleado()" value="Empleado">Empleado</a></li>
+                  <li><a (click)="cliente()" value="Cliente">Cliente</a></li>
+                  </ul>
+                </div>
+
                 <button type="submit" class="btn btn-lg btn-primary btn-block">Login</button>
                 <div class="form-group">
                   <a routerLink="/user/register" class="form-control login-user">Are you new ?</a>

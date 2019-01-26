@@ -25,6 +25,13 @@ import { RegisterComponent } from './components/users/register/register.componen
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { Page404Component } from './components/page404/page404.component';
 import { ListBooksComponent } from './components/admin/list-books/list-books.component';
+import { AbmlocalesComponent } from './components/abmlocales/abmlocales.component';
+import { ProductosComponent } from './components/productos/productos.component';
+import { PedidosComponent } from './components/pedidos/pedidos.component';
+import { ReservasComponent } from './components/reservas/reservas.component';
+import { UsuariosComponent } from './components/usuarios/usuarios.component';
+import { EstadisticasComponent } from './components/estadisticas/estadisticas.component';
+//import { Ng2SmartTableModule } from 'ng2-smart-table';
 
 
 @NgModule({
@@ -39,11 +46,17 @@ import { ListBooksComponent } from './components/admin/list-books/list-books.com
     ProfileComponent,
     NavbarComponent,
     Page404Component,
-    ListBooksComponent
+    ListBooksComponent,
+    AbmlocalesComponent,
+    ProductosComponent,
+    PedidosComponent,
+    ReservasComponent,
+    UsuariosComponent,
+    EstadisticasComponent
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule,/*Ng2SmartTableModule,*/
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireStorageModule,
